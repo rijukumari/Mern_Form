@@ -10,6 +10,9 @@ app.use(cors())
 app.use("/", router)
 
 
+app.get("/" , (req,res) =>{
+    res.send("<h1>Backend is working perffectly 😀 </h1>")
+})
 
 app.listen(3001, () => console.log("server is running"))
 
